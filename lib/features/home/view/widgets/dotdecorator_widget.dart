@@ -7,8 +7,8 @@ class DotDecoratorWidget extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Positioned(
-      bottom: 8 * 10.625,
-      right: 8 * 16.75,
+      bottom: 8 * 13,
+      right: 8 * 18,
       child: DotsIndicator(
         dotsCount: 5,
         position: 0,

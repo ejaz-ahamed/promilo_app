@@ -16,13 +16,13 @@ class IconWidget extends ConsumerWidget {
             bottomLeft: Radius.circular(8),
             bottomRight: Radius.circular(8)),
         child: Container(
-          height: 8 * 50,
+          height: 8 * 46,
           width: MediaQuery.of(context).size.width,
-          color: Colors.white,
+          color: Colors.grey.shade300,
           child: Align(
             alignment: Alignment.bottomCenter,
             child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8),
+              padding: const EdgeInsets.symmetric(vertical: 16),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [

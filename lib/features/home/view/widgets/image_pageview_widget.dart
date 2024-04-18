@@ -11,7 +11,7 @@ class ImagePageViewWidget extends ConsumerWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(16),
         child: SizedBox(
-          height: 8 * 46.25,
+          height: 8 * 40,
           child: PageView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: 3,
