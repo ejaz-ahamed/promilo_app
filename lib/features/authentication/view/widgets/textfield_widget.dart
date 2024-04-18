@@ -7,14 +7,19 @@ class TextFieldWidget extends StatelessWidget {
   final String fieldtail;
   final String hintText;
   final TextEditingController controller;
+  final String? Function(String? value)? validator;
+  final void Function(String)? onChanged;
 
-  const TextFieldWidget(
-      {super.key,
-      required this.fieledHead,
-      required this.fieldtail,
-      required this.hintText,
-      required this.controller,
-      required this.isCheckBox});
+  const TextFieldWidget({
+    super.key,
+    required this.fieledHead,
+    required this.fieldtail,
+    required this.hintText,
+    required this.controller,
+    required this.isCheckBox,
+    required this.validator,
+    required this.onChanged,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +28,8 @@ class TextFieldWidget extends StatelessWidget {
       children: [
         Text(
           fieledHead,
-          style: const TextStyle(color: AppTheme.text, fontSize: 16),
+          style: const TextStyle(
+              color: AppTheme.text, fontSize: 18, fontWeight: FontWeight.w400),
         ),
         const SizedBox(
           height: 8,
