@@ -13,9 +13,8 @@ class LoginPage extends HookConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final isEnabled = useState<bool>(false);
-    final emailController =
-        useTextEditingController(text: 'test45@yopmail.com');
-    final passwordController = useTextEditingController(text: 'Test@123');
+    final emailController = useTextEditingController();
+    final passwordController = useTextEditingController();
     final formKey = useMemoized(() => GlobalKey<FormState>());
 
     return GestureDetector(

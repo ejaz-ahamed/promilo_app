@@ -35,6 +35,8 @@ class TextFieldWidget extends StatelessWidget {
           height: 8,
         ),
         TextFormField(
+          onChanged: onChanged,
+          validator: validator,
           cursorColor: AppTheme.button,
           controller: controller,
           decoration: InputDecoration(

@@ -1,5 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:promilo_app/features/authentication/view/pages/login_page.dart';
+import 'package:promilo_app/features/home/view/pages/description_page.dart';
 import 'package:promilo_app/features/home/view/pages/home_page.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
@@ -15,7 +16,11 @@ final router = GoRouter(
     GoRoute(
       path: HomePage.routePath,
       builder: (context, state) => const HomePage(),
-    )
+    ),
+    GoRoute(
+      path: DescriptionPage.routePath,
+      builder: (context, state) => const DescriptionPage(),
+    ),
   ],
 );
 

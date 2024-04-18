@@ -4,6 +4,7 @@ import 'dart:developer';
 import 'package:crypto/crypto.dart';
 import 'package:dio/dio.dart';
 import 'package:promilo_app/core/exception/base_exception.dart';
+import 'package:promilo_app/core/utils/api_utils.dart';
 import 'package:promilo_app/features/authentication/model/auth_resp_model.dart';
 import 'package:promilo_app/features/authentication/model/user_model.dart';
 
@@ -22,7 +23,7 @@ class ApiServices {
 
     try {
       final response = await dio.post(
-        'https://apiv2stg.promilo.com/user/oauth/token',
+        ApiUtils.baseUrl,
         data: formData,
         options: Options(
           headers: {
