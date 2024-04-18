@@ -32,7 +32,7 @@ class Auth extends _$Auth {
     } catch (e) {
       state = false;
       Future.sync(
-        () => showSnackBar(context, 'An error occured', true),
+        () => showSnackBar(context, 'An error occured: cannot fetch API', true),
       );
     }
   }

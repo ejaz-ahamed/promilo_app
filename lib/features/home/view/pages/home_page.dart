@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:promilo_app/core/theme/app_theme.dart';
 import 'package:promilo_app/features/authentication/view/pages/login_page.dart';
+import 'package:promilo_app/features/home/view/widgets/bott_nav_widget.dart';
 import 'package:promilo_app/features/home/view/widgets/images_widget.dart';
 import 'package:promilo_app/features/home/view/widgets/meetup_card_widget.dart';
 import 'package:promilo_app/features/home/view/widgets/search_field_widget.dart';
+import 'package:promilo_app/features/home/view/widgets/toptrending_image_widget.dart';
 
 class HomePage extends StatelessWidget {
   static const routePath = '/home';
@@ -46,21 +48,21 @@ class HomePage extends StatelessWidget {
               ))
         ],
       ),
-      body: const SingleChildScrollView(
+      body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SearchFieldWidget(),
-              SizedBox(
+              const SearchFieldWidget(),
+              const SizedBox(
                 height: 16,
               ),
-              ImageWidget(),
-              SizedBox(
+              const ImageWidget(),
+              const SizedBox(
                 height: 16,
               ),
-              Text(
+              const Text(
                 "Trending Popular People",
                 style: TextStyle(
                   color: AppTheme.text,
@@ -68,8 +70,8 @@ class HomePage extends StatelessWidget {
                   fontWeight: FontWeight.w700,
                 ),
               ),
-              MeetupCard(),
-              Text(
+              const MeetupCard(),
+              const Text(
                 'Top Trending Meetups',
                 style: TextStyle(
                   color: AppTheme.text,
@@ -77,9 +79,14 @@ class HomePage extends StatelessWidget {
                   fontWeight: FontWeight.w700,
                 ),
               ),
+              TopImageWidget()
             ],
           ),
         ),
+      ),
+      bottomNavigationBar: const SizedBox(
+        height: 80,
+        child: BottomNavigationBarWidget(),
       ),
     );
   }

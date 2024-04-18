@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:promilo_app/core/theme/app_theme.dart';
 import 'package:promilo_app/features/home/view/pages/description_page.dart';
 
 class TopImageWidget extends ConsumerWidget {
   TopImageWidget({super.key});
 
   final List<String> imageUrls = [
-    'https://media.licdn.com/dms/image/D5603AQGACIoHxJ99Tw/profile-displayphoto-shrink_800_800/0/1695010201798?e=2147483647&v=beta&t=ypci0xcwmK1gKJDYGsaIemnlI89vEclnmMsSlycW6p4',
+    'https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg',
     'https://images.pexels.com/photos/9454915/pexels-photo-9454915.jpeg?cs=srgb&dl=pexels-mo-eid-9454915.jpg&fm=jpg',
     'https://i.pinimg.com/736x/58/bd/4f/58bd4fc9ebfccc1f2de419529bbf1a12.jpg',
     'https://images.pexels.com/photos/9454915/pexels-photo-9454915.jpeg?cs=srgb&dl=pexels-mo-eid-9454915.jpg&fm=jpg',
@@ -48,7 +47,7 @@ class TopImageWidget extends ConsumerWidget {
                         child: Container(
                           width: 8 * 7.5,
                           height: 8 * 7.5,
-                          color: AppTheme.text,
+                          color: Colors.white,
                           child: Padding(
                             padding: const EdgeInsets.only(left: 8),
                             child: Text("0${index + 1}",

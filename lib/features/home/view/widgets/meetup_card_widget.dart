@@ -108,7 +108,7 @@ class MeetupCard extends ConsumerWidget {
                   left: 8 * 2.5,
                   child: CircleAvatar(
                     backgroundImage: NetworkImage(
-                        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyJS0mc7rt_X4WwhvitXOUNf8ulSM9JdLLVw&usqp=CAU'),
+                        'https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg'),
                   )),
               const Positioned(
                   top: 8 * 9.75,
@@ -122,7 +122,7 @@ class MeetupCard extends ConsumerWidget {
                   left: 8 * 10,
                   child: CircleAvatar(
                     backgroundImage: NetworkImage(
-                        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyJS0mc7rt_X4WwhvitXOUNf8ulSM9JdLLVw&usqp=CAU'),
+                        'https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg'),
                   )),
               const Positioned(
                   top: 8 * 9.75,
@@ -136,7 +136,7 @@ class MeetupCard extends ConsumerWidget {
                   left: 8 * 17.5,
                   child: CircleAvatar(
                     backgroundImage: NetworkImage(
-                        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyJS0mc7rt_X4WwhvitXOUNf8ulSM9JdLLVw&usqp=CAU'),
+                        'https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg'),
                   )),
             ]);
           },
