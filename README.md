@@ -11,6 +11,7 @@ This Flutter project utilizes various packages and libraries to build a robust a
 - **freezed**: For generating immutable classes with minimal boilerplate, enhancing type safety and code clarity.
 - **share_plus**: For sharing files and content from your Flutter app to other apps on the device.
 - **dio**: For making API calls, offering a simple and clean way to interact with RESTful APIs.
+- **build_runner**: For generating files and running code generation tasks, especially useful with packages like freezed.
 
 
 ## Getting Started
