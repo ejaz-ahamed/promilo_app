@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:promilo_app/core/theme/app_theme.dart';
+import 'package:share_plus/share_plus.dart';
 
 class IconWidget extends ConsumerWidget {
   const IconWidget({super.key});
@@ -53,27 +54,8 @@ class IconWidget extends ConsumerWidget {
                   ),
                   GestureDetector(
                     onTap: () async {
-                      // const content = 'hello';
-
-                      try {
-                        // await Share.share(content);
-                      } catch (error) {
-                        debugPrint(error.toString());
-                      }
-
-                      showModalBottomSheet(
-                        backgroundColor: Colors.black54,
-                        // ignore: use_build_context_synchronously
-                        context: context,
-                        builder: (context) => const SizedBox(
-                          height: 300,
-                          child: Center(
-                              child: Text(
-                            'Loding ......',
-                            style: TextStyle(color: Colors.white60),
-                          )),
-                        ),
-                      );
+                      await Share.share(
+                          "https://i.pinimg.com/736x/d7/46/d9/d746d98d33ba9f4068c382cd0fbde00c.jpg");
                     },
                     child: const Icon(
                       Icons.share_outlined,
